@@ -7,8 +7,14 @@ import { lusitana } from '@/app/ui/fonts';
 import {fetchCardData } from '@/app/lib/data';
 import { Suspense } from 'react';
 import { LatestInvoicesSkeleton, RevenueChartSkeleton, CardsSkeleton } from '@/app/ui/skeletons';
+
 import CardWrapper from '@/app/ui/dashboard/cards';
 
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Dashboard '
+}
 
 export default async function Page() {
   // const revenue = await fetchRevenue() // removed this line as per instructions in chapater 9: streaming
@@ -18,6 +24,7 @@ export default async function Page() {
   const totalPendingInvoices = cardData.totalPendingInvoices
   const numberOfInvoices = cardData.numberOfInvoices
   const numberOfCustomers = cardData.numberOfCustomers
+  
   return (
     <main>
       <h1 className={`${lusitana.className} mb-4 text-xl md:text-2xl`}>
