@@ -19,6 +19,7 @@
     "clsx": "^2.0.0",
     "next": "14.3.0-canary.45",
     "next-auth": "5.0.0-beta.19",
+    "npm": "^10.8.1",
     "postcss": "8.4.31",
     "react": "18.3.0-canary-c3048aab4-20240326",
     "react-dom": "18.3.0-canary-c3048aab4-20240326",
